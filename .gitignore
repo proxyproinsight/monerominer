@@ -1,0 +1,32 @@
+# Logs
+logs/
+*.log
+nohup.out
+
+# Sensitive files
+telegram.conf
+*.wallet
+*.keys
+
+# Build artifacts
+xmrig/build/
+xmrig/.deps/
+*.o
+*.a
+
+# Cache
+.cache/
+__pycache__/
+
+# Binaries (will be downloaded/built)
+monero/
+p2pool/
+
+# Environment
+.env
+.env.local
+
+# Temporary files
+*.swp
+*.swo
+*~
