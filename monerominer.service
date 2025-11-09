@@ -1,0 +1,17 @@
+[Unit]
+Description=Monero Mining Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_USERNAME
+WorkingDirectory=/path/to/monerominer
+ExecStart=/usr/bin/python3 /path/to/monerominer/mine.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/monerominer.log
+StandardError=append:/var/log/monerominer.log
+
+[Install]
+WantedBy=multi-user.target

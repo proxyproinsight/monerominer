@@ -120,6 +120,36 @@ ps aux | grep mine.py
 pkill -f mine.py
 ```
 
+### Linux - Run as Systemd Service (Recommended)
+For automatic startup and better process management:
+
+1. Edit `monerominer.service`:
+   - Replace `YOUR_USERNAME` with your username
+   - Replace `/path/to/monerominer` with actual path
+
+2. Install the service:
+   ```bash
+   sudo cp monerominer.service /etc/systemd/system/
+   sudo systemctl daemon-reload
+   sudo systemctl enable monerominer
+   sudo systemctl start monerominer
+   ```
+
+3. Manage the service:
+   ```bash
+   # Check status
+   sudo systemctl status monerominer
+   
+   # View logs
+   sudo journalctl -u monerominer -f
+   
+   # Stop service
+   sudo systemctl stop monerominer
+   
+   # Disable autostart
+   sudo systemctl disable monerominer
+   ```
+
 ### Windows - Run as Background Task
 ```cmd
 # Start mining in background
