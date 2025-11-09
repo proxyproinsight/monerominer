@@ -1,0 +1,9 @@
+{
+  "pool_url": "pool.hashvault.pro:443",
+  "pool_port": 443,
+  "wallet_address": "YOUR_WALLET_ADDRESS_HERE",
+  "worker_name": "worker1",
+  "threads": null,
+  "tls": true,
+  "algorithm": "rx/0"
+}

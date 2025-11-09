@@ -1,0 +1,33 @@
+# Mining configuration (may contain wallet address)
+mining_config.json
+
+# Logs
+*.log
+mining.log
+
+# XMRig binary and build files
+xmrig/
+xmrig
+xmrig.exe
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml

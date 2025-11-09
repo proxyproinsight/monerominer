@@ -1,0 +1,3 @@
+# Monero Miner Requirements
+# No additional Python packages required for basic functionality
+# The miner uses XMRig which needs to be installed separately
